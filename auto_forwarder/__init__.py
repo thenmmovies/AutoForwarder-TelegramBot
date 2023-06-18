@@ -11,7 +11,7 @@ logging.basicConfig(
 
 LOGGER = logging.getLogger(__name__)
 
-    from auto_forwarder.config import Development as Config
+    from auto_forwarder import Config
     API_KEY = Config.API_KEY
     try:
         OWNER_ID = int(Config.OWNER_ID)
